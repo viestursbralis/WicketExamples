@@ -1,0 +1,19 @@
+<html xmlns:wicket="http://www.w3.org/1999/xhtml">
+<body>
+	<h3>After submitting a client registration form data are converted (marshalling)
+		to xml (output.xml) file which in turn are used to generate an enveloped XML signature (signed_file.xml)</h3>
+
+    <p>In console output You will see a message "Signature passed core validation" if XMLSignature's validation passed. </p>
+
+    <label wicket:id="result"></label>
+
+    <p>XML file with above data (User object) without XMLSignature:</p>
+	<label wicket:id="unSigned"></label>
+
+
+    <p>XML file with User object data and XMLSignature (enveloped):</p>
+	<label wicket:id="signed"></label>
+
+
+</body>
+</html>

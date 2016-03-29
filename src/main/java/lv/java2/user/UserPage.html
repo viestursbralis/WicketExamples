@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="UTF=8">
+<style>
+label {
+	background-color: #eee;
+	padding: 4px;
+}
+
+.feedbackPanelERROR {
+	color: red;
+}
+</style>
+</head>
+<body>
+	<h1>Client registration example with WICKET + XMLSignature</h1>
+	<h3>After successful XMLSignature validation Client object will be saved into database (database creation script added - "databaseCreationScript")</h3>
+
+	<div wicket:id="feedback"></div>
+	<form wicket:id="userForm">
+		<p>
+			<label>First name:</label>: <input wicket:id="firstName" type="text"
+				size="20" />
+		</p>
+		<p>
+			<label>Last name:</label>: <input wicket:id="lastName" type="text"
+											   size="20" />
+		</p>
+
+		<p>
+			<label>Age</label>: <input wicket:id="age" type="text"
+				size="3" />
+		</p>
+		<p>
+			<label>NickName</label>: <input wicket:id="nickName" type="text"
+				size="20" />
+		</p>
+		<input type="submit" value="Register" />
+	</form>
+
+</body>
+</html>
+
+
